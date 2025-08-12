@@ -1,6 +1,6 @@
 # R packages "LatticeDesign" and "vcd" are needed for Visualization.
-print("SSPDMFB: Mixed Material Fragmentation Design Based on the Densest Packed Grid Point Set ")
-print(" Parameters in SSPDMFB: Test count, mixing dimension, number of pieces (default equal to dimension), coset decomposition weight (such as c(1,2) when p=3),
+print("SSPDMFB: Mixutre Design Based on the Densest Packed Grid Point Set ")
+print(" Parameters in SSPDMFB: total sample size, dimension, number of pieces (default equal to dimension), coset decomposition weight (such as c(1,2) when p=3),
       maximum search count ")
 SSPDMFB=function(n,p,slice=p,coast,K=100)
 {
@@ -138,3 +138,4 @@ SSPDMFB=function(n,p,slice=p,coast,K=100)
 # 
 # sl7=apply(t(t(ddd$FULL)*c(1,4)),1,sum)%%7##(1,1) (1,2) (1,6)
 # ternaryplot(ddd$Design,col=sl7+1,pch=sl7+11,grid_color = "black",cex=1,main="",labels_color = "black")
+
